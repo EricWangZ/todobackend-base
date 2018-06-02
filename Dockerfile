@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Justin Menga <justin.menga@gmail.com>
+MAINTAINER Eric Wang <eric.z.wang@ericsson.com>
 
 # Prevent dpkg errors
 ENV TERM=xterm-256color
@@ -7,10 +7,10 @@ ENV TERM=xterm-256color
 # Set mirrors to NZ
 RUN sed -i "s/http:\/\/archive./http:\/\/nz.archive./g" /etc/apt/sources.list
 
-ENV http_proxy=http://10.175.250.81:8080
-ENV https_proxy=http://10.175.250.81:8080
-ENV ftp_proxy=http://10.175.250.81:8080
-ENV proxy=http://10.175.250.81:8080
+#ENV http_proxy=http://10.175.250.81:8080
+#ENV https_proxy=http://10.175.250.81:8080
+#ENV ftp_proxy=http://10.175.250.81:8080
+#ENV proxy=http://10.175.250.81:8080
 
 # RUN cat /etc/apt/apt.cnf
 
